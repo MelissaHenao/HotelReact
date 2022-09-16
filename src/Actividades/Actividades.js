@@ -6,18 +6,28 @@ return(
     <>
         <div className=" container-fluid">
             <div className="row my-5">
-                <div className="col-12 col-md-4 barra  ">
+                <div className="col-12 col-md-4 barra ">
 
-                    <div class="progress mt-5">
+                    <h3 className='texto mt-3'> <b>Porcentajes de confiabilidad</b></h3>
+                    <h6 className='texto mb-3 stronge'>Basada en 400 comentarios</h6>
+
+                    <h6 >intalaciones</h6>
+                    <div className="progress mb-2">
                         <div className="progress-bar barra25  " role="progressbar"  >25%</div>
                     </div>
-                    <div class="progress mt-2">
+
+                    <h6 >Comodida</h6>
+                    <div className="progress mb-2 ">
                         <div className="progress-bar barra50 " role="progressbar"  >50%</div>
                     </div>
-                    <div class="progress mt-2">
+
+                    <h6 >Aseo</h6>
+                    <div className="progress mb-2 ">
                         <div className="progress-bar barra75 " role="progressbar"  >75%</div>
                     </div>
-                    <div class="progress mt-2">
+
+                    <h6 >Comida</h6>
+                    <div className="progress mb-2 ">
                         <div className="progress-bar barra100 " role="progressbar"  >100%</div>
                     </div>
                 
@@ -30,7 +40,7 @@ return(
                         El Hotel InterContinental Medellín está ubicado en el sector residencial más exclusivo de la ciudad, en la parte alta de El Poblado, con la mejor vista de la ciudad y muy cerca del área comercial, industrial y de negocios de la ciudad de Medellín. A solo 35 minutos del Aeropuerto Internacional José María Córdova y a 10 minutos del Aeropuerto Olaya Herrera.Cuenta con 294 habitaciones, el Restaurante Fogón de Piedra, La Cava, Restaurante La Brasserie, La Pastelería, Bari Bar, Piscina climatizada, Gimnasio, Spa, Sauna, Turco, Jacuzzi, canchas de tenis, mini golf, farmacia, peluquería, gift shop y parqueadero con 450 espacios.Las habitaciones del Hotel InterContinental Medellín están completamente renovadas conservando su diseño clásico pero agregando colores y texturas más frescos con un mobiliario modern
                     </p>
                 
-                    <div className="d-flex row">
+                    <div className="d-flex row ">
                         <div className="col-12 col-md-4 " >
                             <img src="https://firebasestorage.googleapis.com/v0/b/frontcomfamamhv.appspot.com/o/natural1.jpg?alt=media&token=0a1e2984-d90f-4fef-b3dd-21f80f9b532b" className="img-fluid"></img>
                         </div>
