@@ -45,3 +45,6 @@
     width: 100%;
 }
 
+.imagen:hover{
+    filter: opacity(.5);
+}
