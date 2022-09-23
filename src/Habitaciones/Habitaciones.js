@@ -1,9 +1,6 @@
 import { ServicioHabitacion } from "../services/ServicioHabitacion/ServicioHabitacion.js"
 import {Footer} from '../Footer/Footer.js'
 import './Habitaciones.css'
-
-
-
 import  {useEffect,useState} from 'react'// hooks functiones especiales de react 
 
 
@@ -12,7 +9,7 @@ export function Habitaciones(){
     //usando el USESTATE (Function especial para crear variable global dentro del componente)
 
     const [estadoDeCarga,setEstadoDeCarga]=useState(true)//con el set guardo cosas 
-    const[habitaciones,setHabitaciones]=useState(null)
+    const[habitaciones,setHabitaciones]=useState(null) //variable global para almacenar consulta de habitaciones
 
 
     //usando el USEEFECT

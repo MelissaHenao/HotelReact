@@ -1,8 +1,11 @@
 import { useState } from "react"
 import{ServicioReserva} from "../services/ServicioReserva/ServicioReserva.js"
+//este es para poner alertas, primero se debe instalar el paquete y luego se importa
+import Swal from 'sweetalert2'
 
 
-export function FormularioReserva(){
+export function FormularioReserva({habitacionSeleccionada}){
+  
 
     const[entrada,setEntrada]=useState("")
     const[salida,setSalida]=useState("")
@@ -12,12 +15,24 @@ export function FormularioReserva(){
     function EnvioFormulario(evento){
         evento.preventDefault()
         let data= {
-            "idHabitacion":"6321ef745a1931ff38e7c2c3",
+            "idHabitacion":habitacionSeleccionada,
             "fechaEntrada":entrada,
             "fechaSalida":salida,
             "numeroNinos":ninos,
             "numeroAdultos":adultos
         }
+       ServicioReserva(data)
+       .then(function(res){
+        console.log(res)
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: res.mensaje,
+            showConfirmButton: false,
+            timer: 1500
+          })
+
+       })
     }
 
     return(
